@@ -19,7 +19,7 @@ app.use(express.json());
 //CORS
 app.use(cors());
 //Nos conectamos a la db
-dbConnection();
+// dbConnection();
 //Directorio publico
 
 app.use(express.static('public'));
