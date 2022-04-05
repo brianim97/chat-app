@@ -2,9 +2,13 @@
     margin: 0 !important;
 }
 body{
+    margin-top: 100px !important;
     margin-bottom: 100px !important;
     background-color: black;
     color: white;
+}
+#container-chat{
+   overflow: auto;
 }
 .span{
     font-weight: bold;
@@ -37,5 +41,11 @@ body{
     font-weight: bold;
     padding: 10px;
     border-radius: 5%;
+}
+.row-info{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
 }
 

@@ -10,38 +10,38 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Socket Client v2.0</title>
   </head>
   <body>
     <div class="container-fluid p-0">
-      <div class="row">
-        <div class="col-12 p-3">
-          <h1>Socket Client v2.0</h1>
+      <div class="row row-info">
+        <div class="col-12 p-3 pt-2">
+          <h6 class="text-center mb-1"><span id="lblStatus" class="mx-2"></span>Socket Client v2.0</h6>
+          <h6 class="text-info text-center">Bienvenid@ <span id="user"></span></h6>
+          <h6 class="small mt-1"></h6>
+          <h6 class="text-center mb-1">Usuarios conectados: <span id="usuariosConectados" class="fw-bold text-warning"></span></h6>
           <hr />
-          <p>
-            Server status:
-            <span id="lblOnline" class="text-success fw-bold">Online</span>
-            <span id="lblOffline" class="text-danger fw-bold">Offline</span>
-          </p>
         </div>
+      </div>
+      <div class="row">
         <div class="col-12 p-4" id="container-chat">
-  
+
         </div>
       </div>
       <div class="row ">
         <div class="col-12 ">
           <div class="chat-input  d-flex justify-content-center w-100 px-3">
-            <input placeholder="Escribe aqui para enviar un mensaje..." type="text" id="txtMensaje" class="form-control w-100" />
-            <button id="btnEnviar" class="btn btn-primary ms-1">Enviar</button>
+            <input placeholder="Escribe aqui para enviar un mensaje..." type="text" id="txtMensaje" class="form-control w-100">
+            <button id="btnEnviar" class="btn btn-info ms-1 d-none">Enviar</button>
           </div>
 
         </div>
       </div>
     </div>
 
-
-    <script src="socket.io/socket.io.js"></script>
-    <script src="js/socket-client.js"></script>
+    
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/socket-client.js"></script>
   </body>
 </html>
