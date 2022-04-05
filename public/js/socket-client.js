@@ -88,6 +88,4 @@ function crearSpanHora(h5,end){
     spanHora.textContent = hoy.getHours() + ':' + hoy.getMinutes()
     h5.appendChild(spanHora)
 }
-
-
 }
