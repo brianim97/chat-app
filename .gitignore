@@ -1,7 +1,4 @@
 node_modules/
 .env
-routes/
-controllers/
-db/
-middlewares/
-model/
+
+

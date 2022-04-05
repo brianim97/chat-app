@@ -2,7 +2,6 @@ const express = require('express');
 require('dotenv').config();
 const cors = require('cors')
 const { socketController } = require('./sockets/controller');
-const dbConnection = require('./db/config');
 
 const app = express();
 const port= process.env.PORT;
@@ -18,8 +17,6 @@ const io = require('socket.io')(server,{
 app.use(express.json());
 //CORS
 app.use(cors());
-//Nos conectamos a la db
-// dbConnection();
 //Directorio publico
 
 app.use(express.static('public'));
