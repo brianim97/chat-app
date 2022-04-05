@@ -21,7 +21,6 @@ window.onload = ()=>{
     socket.on('disconnect',()=>{
         console.log('desconectado');
         lblStatus.innerHTML="<span class='text-danger fw-bold'>Offline</span>"
-        
     })
     
     const enviarMensaje = (value)=>{
@@ -41,6 +40,7 @@ window.onload = ()=>{
 }
 btnEnviar.addEventListener('click',()=>{
     enviarMensaje(txtMensaje.value)
+    txtMensaje.focus();
 })
 txtMensaje.addEventListener('keydown',(e)=>{
     if(e.key == 'Enter'){
